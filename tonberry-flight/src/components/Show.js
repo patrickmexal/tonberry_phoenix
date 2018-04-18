@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import axios from 'axios';
-import { Link } from 'react-router-dom';
+import { BrowserRouter as Switch } from 'react-router-dom';
 
 class Show extends Component {
 
@@ -37,7 +37,7 @@ class Show extends Component {
             </h3>
           </div>
           <div class="panel-body">
-            <h4><Link to="/"><span class="glyphicon glyphicon-th-list" aria-hidden="true"></span> Game Guide List</Link></h4>
+            <h4><Switch to="/"><span class="glyphicon glyphicon-th-list" aria-hidden="true"></span> Game Guide List</Switch></h4>
             <dl>
               <dt>Game:</dt>
               <dd>{this.state.book.isbn}</dd>
@@ -50,7 +50,7 @@ class Show extends Component {
               <dt>Guide:</dt>
               <dd>{this.state.book.publisher}</dd>
             </dl>
-            <Link to={`/edit/${this.state.book._id}`} class="btn btn-success">Edit</Link>&nbsp;
+            <Switch to={`/edit/${this.state.book._id}`} class="btn btn-success">Edit</Switch>&nbsp;
             <button onClick={this.delete.bind(this, this.state.book._id)} class="btn btn-danger">Delete</button>
           </div>
         </div>
@@ -59,4 +59,4 @@ class Show extends Component {
   }
 }
 
-// export default Show;
+
