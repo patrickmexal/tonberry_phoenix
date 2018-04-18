@@ -1,0 +1,24 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background-image: url("./images/fantAsia3.jpg");
+    background-size: cover;
+}
+
+#TonberryLogo {
+    height: 17%;
+    width: 77.18%;
+    margin-left: 55px;
+    margin-top: 37px;
+    margin-bottom: 100px;
+}
+.form-signin-heading {
+	color: black;
+	text-shadow: 2px 2px white;
+	font-family: "Meddon", cursive;
+}
+
+hr {
+    background-color: black;
+}
