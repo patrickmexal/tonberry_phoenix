@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from "../images/tonberryLandscapeSilverBlue.png";
+import logo from "../images/tonberryLandscapeBlack.png";
 
 class Header extends React.Component {
   showSettings (event) {

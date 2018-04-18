@@ -7,11 +7,16 @@ body {
 }
 
 #TonberryLogo {
-    height: 10%;
-    width: 45.4%;
+    height: 17%;
+    width: 77.18%;
     /*height: 90px;
   width: 408.6px;*/
     margin-left: 55px;
-    margin-top: 27px;
+    margin-top: 37px;
     margin-bottom: 100px;
+}
+.form-signin-heading {
+	color: white;
+	text-shadow: 2px 2px grey;
+	font-family: "Meddon", cursive;
 }
