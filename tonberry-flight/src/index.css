@@ -1,5 +1,17 @@
 body {
-  margin: 0;
-  padding: 0;
-  font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background-image: url("./images/fantAsia3.jpg");
+    background-size: cover;
+}
+
+#TonberryLogo {
+    height: 10%;
+    width: 45.4%;
+    /*height: 90px;
+  width: 408.6px;*/
+    margin-left: 55px;
+    margin-top: 27px;
+    margin-bottom: 100px;
 }
