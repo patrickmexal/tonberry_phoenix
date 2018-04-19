@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 import axios from "axios";
+import { BrowserRouter as Router, Route } from "react-router-dom";
 import Login from "./components/Login.js";
 import Register from "./components/Register.js";
 import Create from "./components/Create.js";
@@ -39,7 +40,7 @@ class App extends Component {
     return (
       <div>
       <Header />
-      <Create />
+      <Route exact path="/create" component={Create} />
       <Login />
       <Register />
       <Footer />
