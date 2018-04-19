@@ -81,4 +81,4 @@ class Edit extends Component {
   }
 }
 
-// export default Edit;
+export default Edit;

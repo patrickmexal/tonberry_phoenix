@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import axios from 'axios';
 import { BrowserRouter as Switch } from 'react-router-dom';
 
+
 class Show extends Component {
 
   constructor(props) {
@@ -49,6 +50,7 @@ class Show extends Component {
               <dd>{this.state.book.published_year}</dd>
               <dt>Guide:</dt>
               <dd>{this.state.book.publisher}</dd>
+              <iframe width="560" height="315" src="https://www.youtube.com/embed?listType=search&list={this.state.book.title}walkthrough" frameBorder="0" allow="autoplay; encrypted-media" allowFullScreen></iframe>
             </dl>
             <Switch to={`/edit/${this.state.book._id}`} class="btn btn-success">Edit</Switch>&nbsp;
             <button onClick={this.delete.bind(this, this.state.book._id)} class="btn btn-danger">Delete</button>
@@ -60,3 +62,4 @@ class Show extends Component {
 }
 
 
+export default Show;
