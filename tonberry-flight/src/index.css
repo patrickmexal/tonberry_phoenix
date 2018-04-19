@@ -19,6 +19,15 @@ body {
 	font-family: "Meddon", cursive;
 }
 
-hr {
-    background-color: black;
+
+img.icon {
+    text-align: center;
+    height: 50px;
+    width: 50px;
+    margin: 25px;
+
+}
+
+li:hover {
+    -webkit-transform: scale(1.3);
 }

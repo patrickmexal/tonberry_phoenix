@@ -5,6 +5,7 @@ import Login from "./components/Login.js";
 import Register from "./components/Register.js";
 import Create from "./components/Create.js";
 import Header from "./components/Header.js";
+import Footer from "./components/Footer.js";
 
 
 
@@ -41,6 +42,7 @@ class App extends Component {
       <Create />
       <Login />
       <Register />
+      <Footer />
       </div>
     );
   }

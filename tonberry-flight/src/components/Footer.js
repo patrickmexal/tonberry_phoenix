@@ -7,54 +7,14 @@ class Footer extends React.Component {
   }
     render () {
     return (
-    	<div class="three-column-footer-contact-form-container">
-        <footer class="three-column-footer-contact-form" data-equalizer data-equalize-by-row="true">
-            <div class="footer-left" data-equalizer-watch>
-                <div class="baseline">
-                    <div class="contact-details">
-                        <h6>Contact details</h6>
-                        <p><i class="fa fa-phone fa-lg" aria-hidden="true"></i> 01234 567890</p>
-                        <p><a href="#"><i class="fa fa-envelope-o" aria-hidden="true"></i> Contact us</a></p>
-                        <p><i class="fa fa-map-marker fa-lg" aria-hidden="true"></i> Street, City, County, Country</p>
-                    </div>
-                    <div class="newsletter">
-                        <div class="input-group">
-                            <h6>Sign up for our newsletter</h6>
-                            <input class="input-group-field" type="email" placeholder="Email address">
-                        </div>
-                        <a class="button expanded" href="#">Submit</a>
-                    </div>
-                </div>
-            </div>
-            <div class="footer-center" data-equalizer-watch>
-                <div class="baseline">
-                    <div class="newsletter">
-                        <h6>Contact form</h6>
-                        <div class="input-group">
-                            <input class="input-group-field" type="text" placeholder="Name"></input>
-                            <input class="input-group-field" type="email" placeholder="Email address"></input>
-                            <textarea placeholder="Message"></textarea>
-                        </div>
-                        <a class="button expanded" href="#">Submit</a>
-                    </div>
-                </div>
-            </div>
-            <div class="footer-right" data-equalizer-watch>
-                <div class="baseline">
-                    <img class="thumbnail" src="./images/tonberryPortraitWhite.png">
-                    <h6>Opening times</h6>
-                    <p>Mon - Fri 9:00am - 5:00pm</p>
-                    <p>Sat 9:00am - 8:00pm</p>
-                    <p>Sun 9:00am - 4:00pm</p>
-                    <div class="social">
-                        <i class="fa fa-facebook-square fa-2x" aria-hidden="false"></i>
-                        <i class="fa fa-twitter-square fa-2x" aria-hidden="false"></i>
-                        <i class="fa fa-google-plus-square fa-2x" aria-hidden="false"></i>
-                        <i class="fa fa-linkedin-square fa-2x" aria-hidden="false"></i>
-                    </div>
-                </div>
-            </div>
-        </footer>
+    	<div class="container">
+            <ul class="menu">
+                <li id="rebel"><a href="https://github.com/patrickmexal"><img class="icon" src="https://www.shareicon.net/download/2015/09/19/103665_mobile_512x512.png" /></a></li>
+                <li><a href="https://www.linkedin.com/in/patrickmexal/"><img class="icon" src="https://vignette.wikia.nocookie.net/the-most-popular-girls-in-school/images/1/1a/Linkedin.png/revision/latest?cb=20150730204727" /></a></li>
+                <li><a href="https://stackoverflow.com/users/8630696/patrickmexal"><img class="icon" src="http://hammerjs.github.io/assets/img/stackoverflow-icon.svg" /></a></li>
+                <li><a href="https://www.instagram.com/patrickmexal/"><img class="icon" src="http://diylogodesigns.com/blog/wp-content/uploads/2016/05/Instagram-logo-png-icon.png" /></a></li>
+            </ul>
+        </div>
     );
   }
 }
