@@ -25,7 +25,7 @@ class Create extends Component {
 
     const { origin, name, difficulty, guide} = this.state;
 
-    axios.post('/api/book', { origin, name, difficulty, guide})
+    axios.post('/api/enemy', { origin, name, difficulty, guide})
       .then((result) => {
         this.props.history.push("/")
       });

@@ -6,7 +6,7 @@ var passport = require('passport');
 require('../config/passport')(passport);
 
 /* GET ALL BOOKS */
-router.get('/', passport.authenticate('jwt', { session: false}), function(req, res) {
+router.get('/', function(req, res) {
   var token = getToken(req.headers);
   if (token) {
     Enemy.find(function (err, Enemys) {
@@ -27,7 +27,7 @@ router.get('/:id', function(req, res, next) {
 });
 
 /* SAVE Enemy */
-router.post('/', passport.authenticate('jwt', { session: false}), function(req, res) {
+router.post('/', function(req, res) {
   var token = getToken(req.headers);
   if (token) {
     Enemy.create(req.body, function (err, post) {
