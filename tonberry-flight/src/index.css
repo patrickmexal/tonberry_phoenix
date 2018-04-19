@@ -4,6 +4,7 @@ body {
     font-family: sans-serif;
     background-image: url("./images/fantAsia3.jpg");
     background-size: cover;
+
 }
 
 #TonberryLogo {
@@ -19,15 +20,103 @@ body {
 	font-family: "Meddon", cursive;
 }
 
+#footer {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: 35px;
+    /*text-align: center;*/
+}
+/*
+.wrapper {
+    width: 70%;
+    margin: 0 auto;
+    text-align: left;
+}*/
 
 img.icon {
-    text-align: center;
+    /*text-align: center;*/
     height: 50px;
     width: 50px;
-    margin: 25px;
+    /*margin: 25px;*/
+    box-shadow: 2px 2px 2px 2px white;
+
 
 }
 
 li:hover {
     -webkit-transform: scale(1.3);
 }
+
+#menu {
+    margin-top: 40px;
+}
+a {
+    color: #d85b1c;
+}
+/* Position and sizing of burger button */
+
+.bm-burger-button {
+    position: fixed;
+    width: 36px;
+    height: 30px;
+    left: 36px;
+    top: 36px;
+}
+
+
+/* Color/shape of burger icon bars */
+
+.bm-burger-bars {
+    background: #d85b1c;
+}
+
+
+/* Position and sizing of clickable cross button */
+
+.bm-cross-button {
+    height: 24px;
+    width: 24px;
+}
+
+
+/* Color/shape of close button cross */
+
+.bm-cross {
+    background: #bdc3c7;
+}
+
+
+/* General sidebar styles */
+
+.bm-menu {
+    background: #373a47;
+    padding: 2.5em 1.5em 0;
+    font-size: 1.15em;
+}
+
+
+/* Morph shape necessary with bubble or elastic */
+
+.bm-morph-shape {
+    fill: #373a47;
+}
+
+
+/* Wrapper for item list */
+
+.bm-item-list {
+    color: white;
+    padding: 0.8em;
+}
+
+
+/* Styling of overlay */
+
+.bm-overlay {
+    background: rgba(0, 0, 0, 0.3);
+}
+
+a {
+    font-family: 'Changa', sans-serif;
+}
+

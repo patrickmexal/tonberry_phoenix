@@ -6,6 +6,7 @@ import Register from "./components/Register.js";
 import Create from "./components/Create.js";
 import Header from "./components/Header.js";
 import Footer from "./components/Footer.js";
+import Sidebar from "./components/Sidebar.js";
 
 
 
@@ -39,6 +40,7 @@ class App extends Component {
     return (
       <div>
       <Header />
+      <Sidebar />
       <Create />
       <Login />
       <Register />
