@@ -10,8 +10,8 @@ class Create extends Component {
     this.state = {
       origin: '',
       name: '',
-      author: '',
-      description: ''
+      difficulty: '',
+      guide: ''
     };
   }
   onChange = (e) => {
@@ -23,16 +23,16 @@ class Create extends Component {
   onSubmit = (e) => {
     e.preventDefault();
 
-    const { origin, name, author, description} = this.state;
+    const { origin, name, difficulty, guide} = this.state;
 
-    axios.post('/api/book', { origin, name, author, description})
+    axios.post('/api/book', { origin, name, difficulty, guide})
       .then((result) => {
         this.props.history.push("/")
       });
   }
 
   render() {
-    const { origin, name, author, description } = this.state;
+    const { origin, name, difficulty, guide } = this.state;
     return (
       <div class="container">
         <div class="panel panel-default">
@@ -62,8 +62,8 @@ class Create extends Component {
               </select>
               </div>
               <div class="form-group">
-                <label for="description">Description:</label>
-                <textArea class="form-control" name="description" onChange={this.onChange} placeholder="Guide to success" cols="80" rows="3">{description}</textArea>
+                <label for="guide">Guide:</label>
+                <textArea class="form-control" name="guide" onChange={this.onChange} placeholder="Guide to success" cols="80" rows="3">{guide}</textArea>
               </div>
               <button type="submit" class="btn btn-default">Submit</button>
             </form>
