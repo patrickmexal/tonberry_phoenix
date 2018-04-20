@@ -42,7 +42,7 @@ class Create extends Component {
             </h3>
           </div>
           <div class="panel-body">
-            <h4><Link to="/"><span class="glyphicon glyphicon-th-list" aria-hidden="true"></span> Enemy Creator</Link></h4>
+            <h4 id="enemyCreator"><Link to="/"><span class="glyphicon glyphicon-th-list" aria-hidden="true"></span> Enemy Creator</Link></h4>
             <form onSubmit={this.onSubmit}>
               <div class="form-group">
                 <label for="origin">Origin of Enemy:</label>

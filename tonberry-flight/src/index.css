@@ -3,7 +3,7 @@ body {
     padding: 0;
     font-family: sans-serif;
     background-image: url("./images/fantAsia3.jpg");
-    background-size: cover;
+    background-size: 2400px, 2400px;
 
 }
 
@@ -11,36 +11,25 @@ body {
     height: 17%;
     width: 77.18%;
     margin-left: 55px;
-    margin-top: 37px;
-    margin-bottom: 100px;
+    margin-top: 57px;
+    margin-bottom: 50px;
 }
 .form-signin-heading {
 	color: black;
-	text-shadow: 2px 2px white;
-	font-family: "Meddon", cursive;
+	text-shadow: 2px 2px #d85b1c;
+	font-family: 'Rock Salt', cursive;
 }
 
 #footer {
     margin-top: 30px;
     margin-bottom: 30px;
     margin-left: 35px;
-    /*text-align: center;*/
+    
 }
-/*
-.wrapper {
-    width: 70%;
-    margin: 0 auto;
-    text-align: left;
-}*/
 
 img.icon {
-    /*text-align: center;*/
     height: 50px;
     width: 50px;
-    /*margin: 25px;*/
-    box-shadow: 2px 2px 2px 2px white;
-
-
 }
 
 li:hover {
@@ -52,6 +41,7 @@ li:hover {
 }
 a {
     color: #d85b1c;
+    font-size: 2em;
 }
 /* Position and sizing of burger button */
 
@@ -118,5 +108,9 @@ a {
 
 a {
     font-family: 'Changa', sans-serif;
+}
+
+#enemyCreator {
+    font-size: 1em;
 }
 

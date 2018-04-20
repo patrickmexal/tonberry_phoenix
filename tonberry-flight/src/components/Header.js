@@ -8,7 +8,7 @@ class Header extends React.Component {
   }
     render () {
     return (
-    	<div>
+    	<div id="header">
       		<img src={logo} id="TonberryLogo" alt="Logo"/>
       	</div>
     );

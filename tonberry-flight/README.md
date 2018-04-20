@@ -1,3 +1,39 @@
+Welcome to Tonberry 2.0!
+
+-Description:
+
+Tonberry is a searchable, scalable database of Video Game Boss information. The data in the aforementioned database is curated by the players themselves. All players have different in-game opponents that give them trouble. This is way to consolidate and share information that can improve the player experience.
+
+-Built With:
+
+React
+Foundation 
+Bootstrap
+Material UI
+JQuery
+MongoDB
+Mongoose
+Node.js
+  Express
+  React-Dom
+  Axios
+  Popper.js
+  Passport.js
+
+-Contributing:
+
+Cody Vanasse
+Patrick Mexal
+Donny Vanasse
+Landon Richards
+
+
+-Acknowledgments:
+
+Thank you to the users!
+
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
 Below you will find some information on how to perform common tasks.<br>

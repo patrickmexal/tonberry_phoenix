@@ -39,8 +39,8 @@ class App extends Component {
   render() {
     return (
       <div>
-      <Header />
       <Sidebar />
+      <Header />
       <Create />
       <Login />
       <Register />
