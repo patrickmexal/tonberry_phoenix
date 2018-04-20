@@ -16,7 +16,7 @@ body {
 }
 .form-signin-heading {
 	color: white;
-	text-shadow: 2px 2px #d85b1c;
+	text-shadow: 2px 2px #876136;
 	font-family: 'Rock Salt', cursive;
 }
 
@@ -33,7 +33,7 @@ img.icon {
 }
 
 .icon:hover {
-    -webkit-transform: scale(1.3);
+    -webkit-transform: scale(1.2);
 }
 
 #menu {
