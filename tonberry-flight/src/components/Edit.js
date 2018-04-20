@@ -28,9 +28,9 @@ class Edit extends Component {
   onSubmit = (e) => {
     e.preventDefault();
 
-    const { isbn, title, author, description, published_year, publisher } = this.state.enemy;
+    const { origin, name, difficulty, guide } = this.state.enemy;
 
-    axios.put('/api/enemy/'+this.props.match.params.id, { isbn, title, author, description, published_year, publisher })
+    axios.put('/api/enemy/'+this.props.match.params.id, { origin, name, difficulty, guide })
       .then((result) => {
         this.props.history.push("/show/"+this.props.match.params.id)
       });
@@ -49,29 +49,22 @@ class Edit extends Component {
             <h4><Link to={`/show/${this.state.enemy._id}`}><span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span> enemy List</Link></h4>
             <form onSubmit={this.onSubmit}>
               <div class="form-group">
-                <label for="isbn">ISBN:</label>
-                <input type="text" class="form-control" name="isbn" value={this.state.enemy.isbn} onChange={this.onChange} placeholder="ISBN" />
+                <label for="origin">Origin of Enemy:</label>
+                <input type="text" class="form-control" name="origin" value={this.state.enemy.origin} onChange={this.onChange} placeholder="Origin" />
               </div>
               <div class="form-group">
-                <label for="title">Title:</label>
-                <input type="text" class="form-control" name="title" value={this.state.enemy.title} onChange={this.onChange} placeholder="Title" />
+                <label for="Name">Name of Enemy:</label>
+                <input type="text" class="form-control" name="Name" value={this.state.enemy.Name} onChange={this.onChange} placeholder="Enemy" />
               </div>
               <div class="form-group">
-                <label for="author">Author:</label>
-                <input type="text" class="form-control" name="author" value={this.state.enemy.author} onChange={this.onChange} placeholder="Author" />
+                <label for="difficulty">Difficulty of Enemy:</label>
+                <input type="text" class="form-control" name="difficulty" value={this.state.enemy.difficulty} onChange={this.onChange} placeholder="Adds, Mini-boss, Mid-boss, or Final boss" />
               </div>
               <div class="form-group">
-                <label for="description">Description:</label>
-                <input type="text" class="form-control" name="description" value={this.state.enemy.description} onChange={this.onChange} placeholder="Description" />
+                <label for="guide">Guide to Victory:</label>
+                <input type="text" class="form-control" name="guide" value={this.state.enemy.guide} onChange={this.onChange} placeholder="Guide" />
               </div>
-              <div class="form-group">
-                <label for="published_date">Published Date:</label>
-                <input type="number" class="form-control" name="published_year" value={this.state.enemy.published_year} onChange={this.onChange} placeholder="Published Year" />
-              </div>
-              <div class="form-group">
-                <label for="publisher">Publisher:</label>
-                <input type="text" class="form-control" name="publisher" value={this.state.enemy.publisher} onChange={this.onChange} placeholder="Publisher" />
-              </div>
+      
               <button type="submit" class="btn btn-default">Submit</button>
             </form>
           </div>
