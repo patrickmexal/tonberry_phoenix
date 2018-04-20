@@ -1,7 +1,7 @@
 var express = require('express');
 var router = express.Router();
 var mongoose = require('mongoose');
-var Enemy = require('../models/Book.js');
+var Enemy = require('../models/Enemy.js');
 var passport = require('passport');
 require('../config/passport')(passport);
 

@@ -7,21 +7,21 @@ class Show extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      book: {}
+      enemy: {}
     };
   }
 
   componentDidMount() {
-    axios.get('/api/book/'+this.props.match.params.id)
+    axios.get('/api/enemy/'+this.props.match.params.id)
       .then(res => {
-        this.setState({ book: res.data });
-        console.log(this.state.book);
+        this.setState({ enemy: res.data });
+        console.log(this.state.enemy);
       });
   }
 
   delete(id){
     console.log(id);
-    axios.delete('/api/book/'+id)
+    axios.delete('/api/enemy/'+id)
       .then((result) => {
         this.props.history.push("/")
       });
@@ -33,25 +33,23 @@ class Show extends Component {
         <div class="panel panel-default">
           <div class="panel-heading">
             <h3 class="panel-title">
-              {this.state.book.title}
+              {this.state.enemy.title}
             </h3>
           </div>
           <div class="panel-body">
             <h4><Switch to="/"><span class="glyphicon glyphicon-th-list" aria-hidden="true"></span> Game Guide List</Switch></h4>
             <dl>
-              <dt>Game:</dt>
-              <dd>{this.state.book.isbn}</dd>
-              <dt>Author:</dt>
-              <dd>{this.state.book.author}</dd>
-              <dt>Description:</dt>
-              <dd>{this.state.book.description}</dd>
-              <dt>Patch Version:</dt>
-              <dd>{this.state.book.published_year}</dd>
-              <dt>Guide:</dt>
-              <dd>{this.state.book.publisher}</dd>
+              <dt>Origin of Enemy:</dt>
+              <dd>{this.state.enemy.origin}</dd>
+              <dt>Name of Enemy:</dt>
+              <dd>{this.state.enemy.name}</dd>
+              <dt>Difficulty:</dt>
+              <dd>{this.state.enemy.difficulty}</dd>
+              <dt>Guide to Victory:</dt>
+              <dd>{this.state.enemy.guide}</dd>
             </dl>
-            <Switch to={`/edit/${this.state.book._id}`} class="btn btn-success">Edit</Switch>&nbsp;
-            <button onClick={this.delete.bind(this, this.state.book._id)} class="btn btn-danger">Delete</button>
+            <Switch to={`/edit/${this.state.enemy._id}`} class="btn btn-success">Edit</Switch>&nbsp;
+            <button onClick={this.delete.bind(this, this.state.enemy._id)} class="btn btn-danger">Delete</button>
           </div>
         </div>
       </div>
@@ -59,4 +57,4 @@ class Show extends Component {
   }
 }
 
-
+export default Show;

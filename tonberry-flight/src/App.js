@@ -7,7 +7,7 @@ import Register from "./components/Register.js";
 import Create from "./components/Create.js";
 import Header from "./components/Header.js";
 import Footer from "./components/Footer.js";
-
+import Show from "./components/Show.js";
 
 
 
@@ -24,7 +24,7 @@ class App extends Component {
 
   componentDidMount() {
     axios.defaults.headers.common['Authorization'] = localStorage.getItem('jwtToken');
-    axios.get('/api/book')
+    axios.get('/api/enemy')
       .then(res => {
         this.setState({ books: res.data });
         console.log(this.state.books);
@@ -40,6 +40,7 @@ class App extends Component {
     return (
       <div>
       <Header />
+      <Route exact path="/" component={Show} />
       <Route exact path="/create" component={Create} />
       <Route path="/login" component={Login} />
       <Route path="/register" component={Register} />

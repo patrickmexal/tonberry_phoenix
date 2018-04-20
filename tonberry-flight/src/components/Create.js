@@ -18,6 +18,7 @@ class Create extends Component {
     const state = this.state
     state[e.target.name] = e.target.value;
     this.setState(state);
+    console.log(state)
   }
 
   onSubmit = (e) => {
@@ -53,13 +54,8 @@ class Create extends Component {
                 <input type="text" class="form-control" name="name" value={name} onChange={this.onChange} placeholder="Name" />
               </div>
               <div class="form-group">
-              <label class="addPage" for="difficulty">Rate the Difficulty of the Enemy:</label>
-              <select class="form-control" id="difficulty">
-                <option value="Adds">Adds</option>
-                <option value="Mini-boss">Mini-boss</option>
-                <option value="Mid-boss">Mid-boss</option>
-                <option value="Final Boss">Final Boss</option>
-              </select>
+                <label for="difficulty">Rate the Difficulty of the Enemy:</label>
+                <input type="text" class="form-control" name="difficulty" value={difficulty} onChange={this.onChange} placeholder="Adds, Mini-boss, Mid-boss, or Final boss" />
               </div>
               <div class="form-group">
                 <label for="guide">Guide:</label>
